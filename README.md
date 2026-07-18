@@ -1,4 +1,4 @@
-# FSD_lab : https://github.com/Sambasivarao77/FSD_lab
+# FSD : https://github.com/EcCode26/FSD/
 Software to be installed
 Step 1: Install Node.js
 	visit https://nodejs.org 
