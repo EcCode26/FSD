@@ -4,11 +4,6 @@ const PORT = 3000;
 
 app.use(express.json());   // To read JSON data
 
-//simple route
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-});
-
 //student route
 app.get("/student", (req, res) => {
     res.send("Student Page");
@@ -78,6 +73,23 @@ app.use(myMiddleware);
 //route to check middleware
 app.get("/mwtest", (req, res) => {
     res.send("Middleware executed");
+});
+
+
+// Configure EJS
+app.set("view engine", "ejs");
+
+// Home Page
+app.get("/", (req, res) => {
+
+    res.render("home", {
+
+        college: "Tirumala Engineering College",
+        department: "Department of Computer Science",
+        subject: "MERN Full Stack Development"
+
+    });
+
 });
 
 app.listen(PORT, () => {
