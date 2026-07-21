@@ -75,6 +75,8 @@ app.get("/mwtest", (req, res) => {
     res.send("Middleware executed");
 });
 
+// Middleware to read form data
+app.use(express.urlencoded({ extended: true }));
 
 // Configure EJS
 app.set("view engine", "ejs");
@@ -87,6 +89,24 @@ app.get("/", (req, res) => {
         college: "Tirumala Engineering College",
         department: "Department of Computer Science",
         subject: "MERN Full Stack Development"
+
+    });
+
+});
+
+// Open Registration Form
+app.get("/register", (req, res) => {
+
+    res.render("form");
+
+});
+
+// Receive Form Data
+app.post("/register", (req, res) => {
+
+    res.render("result", {
+
+        student: req.body
 
     });
 
