@@ -18,7 +18,7 @@ app.use(session({
 
     // Create a new session and cookie on the first request
     // (used here to make the demo easy to observe)
-    saveUninitialized: true
+    saveUninitialized: false
 }));
 
 // Home Page
