@@ -23,6 +23,9 @@ app.use(session({
 
 // Home Page
 app.get("/", (req, res) => {
+    //console.log(req.session);
+    //res.send("Hello");    
+    
     // Session Counter
     if (!req.session.count) {
         req.session.count = 1;
