@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Session Demo</title>
+
+<style>
+
+table{
+
+border-collapse:collapse;
+
+}
+
+td,th{
+
+border:1px solid black;
+
+padding:8px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Session Management using Cookies and Sessions</h1>
+
+<hr>
+
+<h2>Session Counter</h2>
+
+<h3>
+
+You visited this page
+
+<%= count %>
+
+times
+
+</h3>
+
+<hr>
+
+<h2>Cookie Received from Browser</h2>
+
+<pre>
+
+<%= JSON.stringify(cookies,null,4) %>
+
+</pre>
+
+<hr>
+
+<h2>Session Object on Server</h2>
+
+<pre>
+
+<%= JSON.stringify(session,null,4) %>
+
+</pre>
+
+<hr>
+
+<a href="/">Refresh Page</a>
+
+<br><br>
+
+<a href="/destroy">
+
+Destroy Session
+
+</a>
+
+</body>
+
+</html>
