@@ -5,20 +5,15 @@
 </head>
 <body>
 
-<!-- Teacher Note: Explain that everything visible is inside BODY -->
-
 <h1>HTML Crash Course</h1>
 <p>Purpose: Learn the basic HTML tags before starting Express & EJS.</p>
 
 <section>
 <h2>1. Headings</h2>
-<p>HTML provides six heading levels.</p>
+<p>HTML provides six heading levels from h1 to h6.</p>
 <h1>Heading H1</h1>
-<h2>Heading H2</h2>
 <h3>Heading H3</h3>
-<h4>Heading H4</h4>
 <h5>Heading H5</h5>
-<h6>Heading H6</h6>
 </section>
 
 <section>
@@ -43,7 +38,6 @@ This is line two.
 <ul>
 <li>HTML</li>
 <li>CSS</li>
-<li>JavaScript</li>
 </ul>
 
 <h3>Ordered List</h3>
@@ -58,11 +52,6 @@ This is line two.
 <h2>5. Hyperlink</h2>
 <a href="https://example.com" target="_blank">Visit Example Website</a>
 <p>Teacher Question: What does target="_blank" do?</p>
-</section>
-
-<section>
-<h2>6. Image</h2>
-<img src="https://via.placeholder.com/200x100?text=College+Logo" alt="Sample Image">
 </section>
 
 <section>
@@ -89,77 +78,33 @@ This is line two.
 <section>
 <h2>8. HTML Form</h2>
 
-<!-- Teacher Note: Explain action, method and name attribute -->
-
 <form>
-
 <label>Name:</label><br>
 <input type="text" name="studentName"><br><br>
-
 <label>Password:</label><br>
 <input type="password" name="password"><br><br>
-
 <label>Email:</label><br>
 <input type="email" name="email"><br><br>
-
 <label>Age:</label><br>
 <input type="number" name="age"><br><br>
-
 <label>Gender:</label><br>
 <input type="radio" name="gender">Male
 <input type="radio" name="gender">Female<br><br>
-
 <label>Skills:</label><br>
 <input type="checkbox">HTML
 <input type="checkbox">CSS
-<input type="checkbox">JavaScript<br><br>
 
 <label>Department:</label><br>
 <select name="department">
 <option>CSE</option>
 <option>ECE</option>
-<option>EEE</option>
-<option>Mechanical</option>
 </select><br><br>
 
 <label>Address:</label><br>
 <textarea rows="4" cols="40"></textarea><br><br>
-
 <button type="submit">Register</button>
 <button type="reset">Reset</button>
-
 </form>
-</section>
-
-<section>
-<h2>9. Important HTML Concepts</h2>
-<ul>
-<li>&lt;head&gt; contains metadata and title.</li>
-<li>&lt;body&gt; contains visible content.</li>
-<li>Forms collect user input.</li>
-<li>The <b>name</b> attribute becomes <code>req.body.name</code> in Express.</li>
-<li>EJS is simply HTML with JavaScript embedded.</li>
-</ul>
-</section>
-
-<section>
-<h2>10. Transition to Express</h2>
-<pre>
-HTML Form
-    |
-Browser
-    |
-POST Request
-    |
-Express
-    |
-req.body
-    |
-res.render()
-    |
-result.ejs
-</pre>
-<p>This is exactly what you will implement in today's lab.</p>
 </section>
 
 </body>
